@@ -123,3 +123,5 @@ STATIC_URL = "/static/"
 LOGIN_REDIRECT_URL = "dashboard"  # Tells Django which URL to redirect to after successful login if no next param present
 LOGIN_URL = "login"  # URL to redirect user to login
 LOGOUT_URL = "logout"  # URL to redirect the user to logout
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
