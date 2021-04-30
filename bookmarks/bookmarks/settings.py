@@ -125,3 +125,8 @@ LOGIN_URL = "login"  # URL to redirect user to login
 LOGOUT_URL = "logout"  # URL to redirect the user to logout
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+MEDIA_URL = "/media/"  # base URL to serve media uploaded by users
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")  # local path where media resides
+
+DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
