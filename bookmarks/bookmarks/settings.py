@@ -130,3 +130,8 @@ MEDIA_URL = "/media/"  # base URL to serve media uploaded by users
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/")  # local path where media resides
 
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
+
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
+    "account.authentication.EmailAuthBackend",
+]
